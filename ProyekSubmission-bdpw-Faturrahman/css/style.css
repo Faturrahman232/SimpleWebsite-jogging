@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+    background-color: #fed592;
+}
+
+h2, h3 {
+    color: #621708;
+}
+
+h4 {
+    color: #780116;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #c32f27;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.featured-image {
+    width: 100%;
+    max-width: 700px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px 5px #00000033;
+}
+
+.profile img {
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px #00000033;
+}
+
+.card {
+    box-shadow: 15px 10px 15px 0 #00000033;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px; 
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #d8572a;
+    text-align: center;
+    color: white;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav {
+    background-color: #c32f27;
+    border-radius: 0px 0px 15px 15px;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+#content {
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap; /* flex-direction dan flex-wrap */
+    gap: 1rem 2rem;
+}
+
+aside {
+    flex: 1;
+}
+
+header {
+    display: inline;
+}
+
+.profile h3 {
+    text-align: center;
+}
+
+article {
+    background-color: #ffffff;
+}
+
+.profile {
+    background-color: #ffffff;
+}
+
+.active {
+    background-color: #621708;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 100px;
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+      flex-flow: column nowrap;
+    }
+    main aside {
+      align-self: center;
+    }
+}
+
+.profile tr {
+    height: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+      justify-content: center;
+      flex-wrap:wrap;
+      column-gap: 1.5rem;
+    }
+
+    main aside {
+      align-self: stretch;
+    }
+
+    nav a:hover {
+        font-weight: bold;
+        color: #d0e10f;
+    }
+
+}
